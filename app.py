@@ -49,8 +49,9 @@ def welcome():
         f"/api/v1.0/<start><br/>"
         f"/api/v1.0/<start>/<end>"
     )
-@app.route("/api/v1.0/percipitation")
-def percipitation():
+
+@app.route("/api/v1.0/precipitation")
+def precipitation():
     # Create session (link) from Python to the DB
     session = Session(engine)
     """Return JSONified precipitation data for the last year."""
